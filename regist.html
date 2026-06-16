@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация | JapanTrip</title>
+    <link rel="icon" type="image/x-icon" href="jp.ico">
+    <link rel="stylesheet" href="regist.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🗾</span>
+                    <span class="logo-text">JapanTrip</span>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О Японии</a></li>
+                        <li><a href="destinations.html">Направления</a></li>
+                        <li><a href="tips.html">Советы</a></li>
+                        <li><a href="map.html">Карта</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Регистрация</h1>
+            <p class="page-subtitle">Заполни форму, чтобы получать новости о Японии и специальные предложения</p>
+        </div>
+    </section>
+
+
+    <section class="register-section">
+        <div class="container">
+            <div class="register-form-container">
+                <form id="registerForm" onsubmit="return showSuccessMessage(event)">
+                    <div class="form-group">
+                        <label for="name">Имя <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">Город</label>
+                        <input type="text" id="city" name="city" placeholder="Ваш город">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest">Что интересно?</label>
+                        <select id="interest" name="interest">
+                            <option value="">Выберите...</option>
+                            <option value="culture">Культура и традиции</option>
+                            <option value="food">Японская кухня</option>
+                            <option value="travel">Путешествия и маршруты</option>
+                            <option value="anime">Аниме и манга</option>
+                            <option value="all">Всё вышеперечисленное</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" id="newsletter" name="newsletter" checked>
+                            Получать новости и акции на email
+                        </label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" id="agree" name="agree" required>
+                            Я согласен с <a href="#" onclick="return false;">условиями обработки данных</a> <span class="required">*</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Зарегистрироваться →</button>
+                </form>
+
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <div class="success-icon">✓</div>
+                    <h3>Спасибо за регистрацию!</h3>
+                    <p>Мы отправили письмо с подтверждением на вашу почту.</p>
+                    <p class="small">Скоро вы узнаете о самых интересных событиях в мире Японии 🇯🇵</p>
+                    <button class="btn-reset" onclick="resetForm()">Заполнить снова</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-icon">🗾</span>
+                        <span class="logo-text">JapanTrip</span>
+                    </div>
+                    <p>Открой для себя настоящую Японию вместе с нами. Путешествия, которые вдохновляют.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О Японии</a></li>
+                        <li><a href="destinations.html">Направления</a></li>
+                        <li><a href="tips.html">Советы</a></li>
+                        <li><a href="map.html">Карта</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>📧 info@japantrip.ru</p>
+                    <p>📞 +7 (800) 123-45-67</p>
+                    <p>📍 РКСИ, ул. Тургеневская, 10/6</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JapanTrip.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О Японии | JapanTrip</title>
+    <link rel="icon" type="image/x-icon" href="jp.ico">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🗾</span>
+                    <span class="logo-text">JapanTrip</span>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html" class="active">О Японии</a></li>
+                        <li><a href="napravlenia.html">Направления</a></li>
+                        <li><a href="tips.html">Советы</a></li>
+                        <li><a href="map.html">Карта</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+   
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">О Японии</h1>
+            <p class="page-subtitle">Страна восходящего солнца: традиции, технологии и уникальная культура</p>
+        </div>
+    </section>
+
+
+    <section class="about-intro">
+        <div class="container">
+            <div class="intro-text">
+                <h2>Добро пожаловать в Японию</h2>
+                <p>Япония — удивительная страна, где ультрасовременные небоскребы соседствуют с древними храмами, а традиции бережно хранятся веками. Это место, где вы можете насладиться цветением сакуры весной, увидеть величественную гору Фудзи и попробовать настоящий рамен.</p>
+                <p>Страна состоит из более чем 6 800 островов, но основные пять — Хонсю, Хоккайдо, Кюсю, Сикоку и Окинава. Столица — Токио, один из самых больших мегаполисов мира. Более 70% территории страны занимают горы, покрытые густыми лесами, среди которых скрываются многочисленные горячие источники — онсэны. Историческое наследие государства поражает: в Киото находится знаменитый Золотой павильон, а в окрестностях Нары можно встретить древнейшие деревянные храмы в мире. Культурная жизнь здесь сочетает глубокое уважение к традициям и любовь к новейшим технологиям.Местные жители бережно хранят искусство чайной церемонии, каллиграфии и театра кабуки, передавая их из поколения в поколение. Наряду с этим, современные мегаполисы славятся своими яркими кварталами поп-культуры и развитой инфраструктурой. Транспортная система Японии является одной из самых пунктуальных и быстрых на планете благодаря знаменитым поездам-пулям синкансэн. Национальная гастрономия также вышла далеко за пределы суши и рамена: в стране насчитывается множество заведений, отмеченных гидом Мишлен. Природа здесь тоже удивляет своими контрастами: от заснеженных склонов Хоккайдо, где проходят горнолыжные курорты, до субтропических пляжей Окинавы.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Фотогалерея</span>
+                <h2 class="section-title">Красоты Японии</h2>
+                <p class="section-subtitle">Нажми на фото для просмотра</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-img img1" onclick="openLightbox(0)"></div>
+                    <p class="gallery-caption">Гора Фудзи — символ Японии</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img img2" onclick="openLightbox(1)"></div>
+                    <p class="gallery-caption">Цветение сакуры в Токио</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img img3" onclick="openLightbox(2)"></div>
+                    <p class="gallery-caption">Красные ворота тории в Киото</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img img4" onclick="openLightbox(3)"></div>
+                    <p class="gallery-caption">Замок Химэдзи (Белая цапля)</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img img5" onclick="openLightbox(4)"></div>
+                    <p class="gallery-caption">Бамбуковая роща Арасияма</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img img6" onclick="openLightbox(5)"></div>
+                    <p class="gallery-caption">Олени в Нара-парке</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="culture-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Культура</span>
+                <h2 class="section-title">Традиции и современность</h2>
+                <p class="section-subtitle">Что делает Японию уникальной</p>
+            </div>
+            
+            <div class="culture-grid">
+                <div class="culture-card">
+                    <div class="culture-icon">🍵</div>
+                    <h3>Чайная церемония</h3>
+                    <p>Традиционный ритуал приготовления и подачи матча — зеленого чая. Это медитативный процесс, отражающий гармонию и уважение.</p>
+                </div>
+                <div class="culture-card">
+                    <div class="culture-icon">🎎</div>
+                    <h3>Кимоно</h3>
+                    <p>Традиционная японская одежда, которую до сих пор надевают на праздники, свадьбы и важные церемонии.</p>
+                </div>
+                <div class="culture-card">
+                    <div class="culture-icon">🏯</div>
+                    <h3>Самураи и бусидо</h3>
+                    <p>Кодекс чести воинов, который до сих пор влияет на японское общество — верность, честь и самодисциплина.</p>
+                </div>
+                <div class="culture-card">
+                    <div class="culture-icon">🎌</div>
+                    <h3>Аниме и манга</h3>
+                    <p>Современная японская культура покорила весь мир. Аниме и манга — важная часть идентичности молодой Японии.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="facts-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">А знаешь ли ты?</span>
+                <h2 class="section-title">Интересные факты</h2>
+                <p class="section-subtitle">Удивительная Япония в цифрах и фактах</p>
+            </div>
+            
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <div class="fact-number">550</div>
+                    <p>синтоистских святилищ только в Токио</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number">20 с.</div>
+                    <p>средняя задержка поездов</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number">100+</div>
+                    <p>в стране проживают более 80 000 человек, перешагнувших столетний рубеж</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number">200+</div>
+                    <p>вулканов, из которых 40 активных</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-icon">🗾</span>
+                        <span class="logo-text">JapanTrip</span>
+                    </div>
+                    <p>Открой для себя настоящую Японию вместе с нами. Путешествия, которые вдохновляют.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О Японии</a></li>
+                        <li><a href="napravlenia.html">Направления</a></li>
+                        <li><a href="tips.html">Советы</a></li>
+                        <li><a href="map.html">Карта</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>📧 info@japantrip.ru</p>
+                    <p>📞 +7 (800) 123-45-67</p>
+                    <p>📍 РКСИ, ул. Тургеневская, 10/6</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JapanTrip.</p>
+            </div>
+        </div>
+    </footer>
+
+  
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <span class="nav-btn prev" onclick="changeImage(-1)">&#10094;</span>
+        <span class="nav-btn next" onclick="changeImage(1)">&#10095;</span>
+        <div class="lightbox-controls">
+            <button class="ctrl-btn" onclick="zoomIn()">🔍 +</button>
+            <button class="ctrl-btn" onclick="zoomOut()">🔍 -</button>
+            <button class="ctrl-btn" onclick="resetZoom()">⟳ Сброс</button>
+        </div>
+        <div class="image-container">
+            <img id="lightbox-img" class="lightbox-content">
+        </div>
+        <div class="image-counter" id="image-counter"></div>
+    </div>
+
+    <script>
+       
+        const images = [
+            'fudzi.jpg',
+            'sakura.jpg',
+            'toria.jpg',
+            'zamok.jpg',
+            'arasaima.jpg',
+            'nara.jpg'
+        ];
+        
+        let currentIndex = 0;
+        let currentZoom = 1;
+        
+        function openLightbox(index) {
+            currentIndex = index;
+            currentZoom = 1;
+            const img = document.getElementById('lightbox-img');
+            img.src = images[currentIndex];
+            img.style.transform = `scale(${currentZoom})`;
+            document.getElementById('lightbox').style.display = 'flex';
+            updateCounter();
+        }
+        
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+        
+        function changeImage(direction) {
+            currentIndex += direction;
+            if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1;
+            }
+            currentZoom = 1;
+            const img = document.getElementById('lightbox-img');
+            img.src = images[currentIndex];
+            img.style.transform = `scale(${currentZoom})`;
+            updateCounter();
+        }
+        
+        function zoomIn() {
+            currentZoom = Math.min(currentZoom + 0.2, 3);
+            document.getElementById('lightbox-img').style.transform = `scale(${currentZoom})`;
+        }
+        
+        function zoomOut() {
+            currentZoom = Math.max(currentZoom - 0.2, 0.5);
+            document.getElementById('lightbox-img').style.transform = `scale(${currentZoom})`;
+        }
+        
+        function resetZoom() {
+            currentZoom = 1;
+            document.getElementById('lightbox-img').style.transform = `scale(${currentZoom})`;
+        }
+        
+        function updateCounter() {
+            document.getElementById('image-counter').innerHTML = `${currentIndex + 1} / ${images.length}`;
+        }
+        
+      
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+            if (e.key === 'ArrowLeft') {
+                changeImage(-1);
+            }
+            if (e.key === 'ArrowRight') {
+                changeImage(1);
+            }
+        });
+    </script>
+
+</body>
+</html>
